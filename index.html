@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commuter Traffic App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Commuter Traffic App</h1>
+
+        <!-- Hakukenttä -->
+        <div class="search-container">
+            <label for="searchField">Etsi asema:</label>
+            <input type="text" id="searchField" placeholder="Hae asemaa...">
+        </div>
+
+        <!-- Aseman valinta -->
+        <div class="dropdown-container">
+            <label for="stationDropdown">Valitse asema:</label>
+            <select id="stationDropdown">
+                <option value="">Valitse asema</option>
+                <option value="HKI">Helsingin rautatieasema</option>
+                <option value="PSL">Pasila</option>
+                <option value="TKU">Turku</option>
+                <option value="HEC">Lentoasema</option>
+                <option value="TKL">Tikkurila</option>
+            </select>
+        </div>
+
+        <!-- Aikataulut -->
+        <div id="timetable"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
